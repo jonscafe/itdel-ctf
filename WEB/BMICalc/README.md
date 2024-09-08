@@ -25,7 +25,7 @@ None
 ## Flag
 
 ```
-ITDEL10{s1mp3_XX3_1Nj3cT10n_R1ghT}
+ITDEL10{s1mpl3_XX3_1Nj3cT10n_R1ghT}
 ```
 
 ## connection
