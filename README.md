@@ -44,4 +44,7 @@ ITDEL{hell0W_olrd_!5Simpl3#}
 | --- | --------- | ------------------- | ----------- | ---------------- |
 | 1   | WEB    | BMICalc  | VascoZ    | - |
 | 2   | WEB    | Art Of War  | VascoZ    | - |
+| 3   | REV    | Flagcheck  | .jagungrebus    | - |
+| 4   | REV    | Hadiah Gokil  | .jagungrebus    | http://HOSTNAME:7021 |
+| 5   | REV    | Forbidden Item  | .jagungrebus    | - |
 
