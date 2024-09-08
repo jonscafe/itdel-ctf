@@ -1,4 +1,4 @@
-# BMICalc
+# Art Of War
 
 Author: VascoZ
 
