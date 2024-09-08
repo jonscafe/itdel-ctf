@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  Bmicalc:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
+    restart: always
