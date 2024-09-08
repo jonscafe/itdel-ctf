@@ -1,4 +1,4 @@
-# WotaButa
+# BMICalc
 
 Author: VascoZ
 
@@ -25,7 +25,7 @@ None
 ## Flag
 
 ```
-ITDEL10{s1mpl3_XX3_1Nj3cT10n_R1ghT}
+ITDEL{s1mpl3_XX3_1Nj3cT10n_R1ghT}
 ```
 
 ## connection
