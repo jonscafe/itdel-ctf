@@ -4,7 +4,7 @@ Author: VascoZ
 
 ## Description
 
-Pintu Kemana Saja *suara doraemon*
+Pintu Kemana Saja /*suara doraemon/*
 
 ## Requirements
 
