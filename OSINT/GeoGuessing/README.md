@@ -1,9 +1,9 @@
 # GeoGuessing
 # Description
-Simple flag check
+Ini adalah jalan yang dilewati author ke sekolah saat dia masih SMA, apakah kamu bisa menebak berapa koordinatnya? Tebak saja, tidak harus pas :D
 
 # Flag
-ITDEL{Guessing_ike_Senku}
+ITDEL{Guessing_like_Senku}
 
 # Score
 500

@@ -1,0 +1,6 @@
+version: '3'
+services:
+  geoguessing:
+    build: .
+    ports:
+      - "7035:7035"  # Port yang digunakan oleh server
