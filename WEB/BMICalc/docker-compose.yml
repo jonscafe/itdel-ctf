@@ -4,7 +4,7 @@ services:
   Bmicalc:
     build: .
     ports:
-      - "80:80"
+      - "7009:80"
     volumes:
       - .:/app
     restart: always
