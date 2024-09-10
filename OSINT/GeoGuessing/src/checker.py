@@ -1,5 +1,6 @@
 import socket
 import math
+import threading
 
 # Configuration
 HOST = "0.0.0.0"  # Listen on all network interfaces
@@ -69,8 +70,9 @@ def start_server():
         client_socket, addr = server.accept()
         print(f"Accepted connection from {addr}")
 
-        # Handle the client in a separate thread or directly
-        handle_client(client_socket)
+        # Handle each client in a new thread
+        client_handler = threading.Thread(target=handle_client, args=(client_socket,))
+        client_handler.start()
 
 if __name__ == "__main__":
     start_server()
