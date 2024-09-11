@@ -74,12 +74,12 @@ function getQuote(): string
     <section class="bg-black">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2">
             <div class="grid grid-cols-2 gap-4">
-                <img class="w-full rounded-lg" src="https://example.com/warrior-image1.jpg" alt="Warrior 1">
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://example.com/warrior-image2.jpg" alt="Warrior 2">
+                <img class="w-full rounded-lg" src="https://harianmerdekapost.com/wp-content/uploads/2024/07/khalid-bin-walid.jpg" alt="Warrior 1">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://asset-a.grid.id/crop/0x0:0x0/360x240/photo/2023/02/15/1jpeg-20230215090447.jpeg" alt="Warrior 2">
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <img class="w-full rounded-lg" src="https://example.com/warrior-image3.jpg" alt="Warrior 3">
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://example.com/warrior-image4.jpg" alt="Warrior 4">
+                <img class="w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/5fa5ec79661ee904d2973ca0/1706112231700-0X09AOHZ6W2FZMUDNE8O/Alexander+the+Great+Trivia+Questions.jpg" alt="Warrior 3">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://www.harianbatakpos.com/wp-content/uploads/2024/03/sejarah-napoleon.jpg" alt="Warrior 4">
             </div>
         </div>
     </section>
