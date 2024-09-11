@@ -3,6 +3,6 @@ services:
   web:
     build: ./
     ports:
-      - "7010:80"
+      - "7010:8080"
     deploy: {resources: {limits: {cpus: '1', memory: 512M}}}
     restart: unless-stopped
