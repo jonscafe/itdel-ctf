@@ -3,5 +3,5 @@ services:
   justsolveit:
     build: .
     ports:
-      - 9001:5000
+      - 7030:5000
     restart: always

@@ -50,3 +50,8 @@ ITDEL{hell0W_olrd_!5Simpl3#}
 | 7   | REV      | temenlama      | hanz0x17     | -                    |
 | 8   | PWN      | hakc dis atm   | hanz0x17     | nc HOSTNAME 7015     |
 | 9   | OSINT    | Git Osint      | hanz0x17     | -                    |
+| 10   | CRY    | Base_QwErTyUiOpA      | wonping     | -                    |
+| 11   | CRY    | JustSolveIT      | wonping     | nc HOSTNAME 7030                    |
+| 12   | CRY    | Reuse      | wonping     | -                    |
+
+
