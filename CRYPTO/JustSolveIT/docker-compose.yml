@@ -1,0 +1,7 @@
+version: "3"
+services:
+  justsolveit:
+    build: .
+    ports:
+      - 7030:5000
+    restart: always
