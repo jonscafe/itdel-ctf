@@ -53,5 +53,9 @@ ITDEL{hell0W_olrd_!5Simpl3#}
 | 10   | CRY    | Base_QwErTyUiOpA      | wonping     | -                    |
 | 11   | CRY    | JustSolveIT      | wonping     | nc HOSTNAME 7030                    |
 | 12   | CRY    | Reuse      | wonping     | -                    |
+| 13   | REV    | ezr3v      | k.eii     | -                    |
+| 14   | FORENSIC    | ezf1x      | k.eii     | -                    |
+| 15   | FORENSIC    | baby first dfir      | k.eii     | -                    |
+
 
 
