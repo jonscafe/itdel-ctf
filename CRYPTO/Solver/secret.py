@@ -1,0 +1,1 @@
+FLAG = b'ITDEL{haha_one_linear_is_imposible}'
