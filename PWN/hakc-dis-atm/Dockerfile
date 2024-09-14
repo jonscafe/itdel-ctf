@@ -20,8 +20,8 @@ RUN chmod 555 /sanity.sh
 # For service
 RUN mkdir /app
 
-COPY ./src/atm.c /app/atm.c
-RUN gcc -o /app/atm /app/atm.c
+COPY ./src/chall.c /app/chall.c
+RUN gcc -o /app/chall /app/chall.c
 
 # Finishing
 RUN useradd ctf

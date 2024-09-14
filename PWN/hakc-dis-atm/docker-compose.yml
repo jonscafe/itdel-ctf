@@ -3,8 +3,8 @@ version: "2"
 services:
   main:
     build: .
-    container_name: hakc_dis_atm
-    restart: on-failure
+    container_name: hakcdisatm
+    restart: always
     ports:
       - "7015:8000"
     network_mode: bridge
