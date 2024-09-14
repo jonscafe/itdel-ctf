@@ -79,7 +79,7 @@ function getQuote(): string
             </div>
             <div class="grid grid-cols-2 gap-4">
                 <img class="w-full rounded-lg" src="https://images.squarespace-cdn.com/content/v1/5fa5ec79661ee904d2973ca0/1706112231700-0X09AOHZ6W2FZMUDNE8O/Alexander+the+Great+Trivia+Questions.jpg" alt="Warrior 3">
-                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://www.harianbatakpos.com/wp-content/uploads/2024/03/sejarah-napoleon.jpg" alt="Warrior 4">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://idenesia.id/wp-content/uploads/2022/08/Napoleon-Bonaparte-italicsmagazine.jpg" alt="Warrior 4">
             </div>
         </div>
     </section>
