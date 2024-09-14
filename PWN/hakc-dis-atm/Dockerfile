@@ -8,7 +8,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt install -y gcc libc6-dev
+RUN apt install -y gcc libc6-dev socat
 
 # For entrypoint and sanity check
 RUN apt install -y cron curl
