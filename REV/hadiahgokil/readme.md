@@ -20,7 +20,7 @@ Flow Solver:
 500
 
 # Author
-scriptshogun
+.jagungrebus
 
 # Tags
 Reverse Engineer, Web

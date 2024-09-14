@@ -9,7 +9,7 @@ ITDEL{kamulebihsukapakaighidraapaidapro}
 500
 
 # Author
-scriptshogun
+.jagungrebus
 
 # Tags
 Reverse Engineer, PE
