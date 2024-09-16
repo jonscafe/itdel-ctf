@@ -4,38 +4,19 @@ error_reporting(0);
 
 $output = null;
 
-$banned = [
-    '127.0.0.1',
-    'localhost',
-    '0.0.0.0',
-    '::1',
-    '[::]',
-    '127.0.1.3',
-    '127.0.1.1',
-    '0',
-    '127.1',
-    '127.0.1',
-];
+if (isset($_GET['host']) && is_string($_GET['host'])) {
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_URL, $_GET['host']);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    $output = curl_exec($ch);
 
-if (isset($_GET['host']) && is_string($_GET['host']) && preg_match('/^(https?:\/\/)?([a-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/', $_GET['host'])) {
-    $hostname = getHostByName($_GET['host']);
-
-    if (in_array($hostname, $banned) || $hostname === $_GET['host']) {
-        $output = "Are you for real man?";
-    } else {
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_URL, $_GET['host']);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-        $output = curl_exec($ch);
-
-        if ($output === false) {
-            $output = "Sorry, timed out!";
-        } else if (strpos($output, 'amFkIGFsaWsgeGQ/IHkgcmFhd2FhYWg=') !== false) {
-            $output = "SVRERUx7WW9vb19lc3NlcmVmZmZmZmZmX2ZvdW5kYXRpb25ubm4hIX0=";
-        }
-        curl_close($ch);
+    if ($output === false) {
+        $output = "Sorry, timed out!";
+    } else if (strpos($output, 'SiantarRapFoundationJelasBatakyangBicara') !== false) {
+        $output = "SVRERUx7WW9vb19lc3NlcmVmZmZmZmZmX2ZvdW5kYXRpb25ubm4hIX0=";
     }
+    curl_close($ch);
 } else {
     $output = "URL Dulu Bos!";
 }
@@ -43,9 +24,11 @@ if (isset($_GET['host']) && is_string($_GET['host']) && preg_match('/^(https?:\/
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="id">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>seseref crawler</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
@@ -53,7 +36,7 @@ if (isset($_GET['host']) && is_string($_GET['host']) && preg_match('/^(https?:\/
         hljs.initHighlightingOnLoad();
     </script>
 </head>
-<!-- amFkIGFsaWsgeGQ/IHkgcmFhd2FhYWg= -->
+<!-- SiantarRapFoundationJelasBatakyangBicara -->
 
 <body class="dark dark:bg-gray-900">
     <section class="bg-white dark:bg-gray-900">
@@ -62,13 +45,13 @@ if (isset($_GET['host']) && is_string($_GET['host']) && preg_match('/^(https?:\/
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
                     Hundul Ho asa huperiksa linkmu!
                 </h2>
-                <form action="">
+                <form method="GET" action="">
                     <div class="mb-6 mt-4">
                         <label for="default-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                             Linkmu
                         </label>
                         <input type="text" id="default-input" name="host" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800 mt-5">
+                        <button type="submit" class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800 mt-5">
                             <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                                 Lao
                             </span>
