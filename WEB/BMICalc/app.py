@@ -18,10 +18,10 @@ def calculate_bmi():
         Berat = doc.xpath('//berat/text()')[0]
         Tinggi = doc.xpath('//tinggi/text()')[0]
 
-        bmi = calculate_bmi(berat, tinggi)
+        bmi = calculate_bmi(Berat, Tinggi)
         bmi_category = get_bmi_category(bmi)
 
-        xml_response = f"<response><Tinggi>{tinggi}</Tinggi><Berat>{berat}</Berat><result>BMI: {bmi:.2f} ({bmi_category})</result></response>"
+        xml_response = f"<response><Tinggi>{Tinggi}</Tinggi><Berat>{Berat}</Berat><result>BMI: {bmi:.2f} ({bmi_category})</result></response>"
 
         return xml_response, {'Content-Type': 'application/xml'}
 
@@ -41,7 +41,7 @@ def calculate_bmi(berat, tinggi):
         tinggi_float = 0.0
 
     tinggi_meters = tinggi_float / 100  # Convert height to meters
-    return berat_float / (tinggi_in_meters * tinggi_in_meters)
+    return berat_float / (tinggi_meters * tinggi_meters)  # Use tinggi_meters here
 
 
 def get_bmi_category(bmi):
@@ -56,4 +56,4 @@ def get_bmi_category(bmi):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=80,debug=False)
+    app.run(host='0.0.0.0', port=80, debug=False)
