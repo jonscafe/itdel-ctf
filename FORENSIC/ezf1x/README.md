@@ -18,5 +18,5 @@ k.eii
 # Tags
 Forensic
 
-# POC (fix header and IDAT chunk)
+# POC (fix header, IHDR, and IDAT chunk)
 ![image](https://github.com/user-attachments/assets/20acf131-948a-4c5e-8315-cc8c6c4f2da6)
